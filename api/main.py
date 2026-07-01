@@ -30,9 +30,22 @@ app = FastAPI(
 ### )
 
 # CORS - Updated for better file upload support
+#### app.add_middleware(
+####     CORSMiddleware,
+####     allow_origins=["*"],
+####     allow_credentials=True,
+####     allow_methods=["*"],
+####     allow_headers=["*"],
+####     expose_headers=["*"]
+#### )
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=[
+        "https://billing-anomaly-dashboard.onrender.com",
+        "http://localhost:8501",
+        "http://localhost:8000"
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

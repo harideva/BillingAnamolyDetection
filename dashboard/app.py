@@ -14,7 +14,11 @@ st.set_page_config(
     layout="wide"
 )
 
+"""
 API_URL = st.secrets.get("API_URL", "http://localhost:8000")
+"""
+
+API_URL = "https://billing-anomaly-api.onrender.com"
 
 st.title("⚡ Billing Anomaly Detection System")
 st.markdown("*Oracle CC&B-style billing data anomaly detection using Isolation Forest*")

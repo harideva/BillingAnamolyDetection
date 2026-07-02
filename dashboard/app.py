@@ -16,7 +16,8 @@ st.set_page_config(
 )
 
 # Use environment variable or fallback to local
-API_URL = os.getenv("API_URL", "https://billing-anomaly-api.onrender.com")
+# API_URL = os.getenv("API_URL", "https://billing-anomaly-api.onrender.com")
+API_URL = "https://billing-anomaly-api.onrender.com"
 
 st.title("⚡ Billing Anomaly Detection System")
 st.markdown("*Oracle CC&B-style billing data anomaly detection using Isolation Forest*")
